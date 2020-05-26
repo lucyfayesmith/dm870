@@ -64,15 +64,16 @@ if __name__=="__main__":
                         encodedMiddleLeftSquare[i], encodedMiddleMiddleSquare[i], encodedMiddleRightSquare[i],
                         encodedBottomLeftSquare[i], encodedBottomMiddleSquare[i], encodedBottomRightSquare[i]])
 
+    print(features)
 
-    classifier = tree.DecisionTreeClassifier()
-    classifier = classifier.fit(features, encodedOutcome)
+    # classifier = tree.DecisionTreeClassifier()
+    # classifier = classifier.fit(features, encodedOutcome)
 
-    #o,x,x,b,x,o,o,x,b,positive
-    # 1 = o 2 = x 0 = b
-    print(classifier.predict([[1,2,2,0,2,1,1,2,0]]))
-    # o,o,o,x,x,b,x,o,x,negative
-    print(classifier.predict([[1,1,1,2,2,0,2,1,2]]))
+    # #o,x,x,b,x,o,o,x,b,positive
+    # # 1 = o 2 = x 0 = b
+    # print(classifier.predict([[1,2,2,0,2,1,1,2,0]]))
+    # # o,o,o,x,x,b,x,o,x,negative
+    # print(classifier.predict([[1,1,1,2,2,0,2,1,2]]))
 
-    printTree(classifier)
+    # printTree(classifier)
 
